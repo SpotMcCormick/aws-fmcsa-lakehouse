@@ -1,0 +1,22 @@
+# Terraform
+terraform/.terraform/
+terraform/*.tfstate
+terraform/*.tfstate.backup
+
+# Lambda artifacts
+lambda/*.zip
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# Secrets
+.env
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
