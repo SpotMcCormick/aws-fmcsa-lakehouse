@@ -24,5 +24,8 @@ __pycache__/
 # OS
 .DS_Store
 
-#initial load data
+# Initial load data
 data/
+
+# Logs
+logs/

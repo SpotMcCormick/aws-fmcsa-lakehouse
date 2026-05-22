@@ -2589,3 +2589,163 @@ group by
 [0m09:25:51.715446 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fad9747c800>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fad9747c5f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fad7bd4c140>]}
 [0m09:25:51.716413 [debug] [MainThread]: Flushing usage events
 [0m09:25:51.843935 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m11:49:08.453503 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f431b823560>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f431b821f70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f431ba33c20>]}
+
+
+============================== 11:49:08.460015 | fce708e5-fca1-47b0-a537-66ed143852c2 ==============================
+[0m11:49:08.460015 [info ] [MainThread]: Running with dbt=1.11.11
+[0m11:49:08.461292 [debug] [MainThread]: running dbt with arguments {'send_anonymous_usage_stats': 'True', 'target_path': 'None', 'profiles_dir': '/home/jeremymccormick/.dbt', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'cache_selected_only': 'False', 'log_path': '/home/jeremymccormick/dev-sandbox/aws-fmcsa-lakehouse/dbt/logs', 'use_colors': 'True', 'use_experimental_parser': 'False', 'log_format': 'default', 'version_check': 'True', 'partial_parse': 'True', 'invocation_command': 'dbt run --select stg_fmcsa --target fmcsa_dev', 'no_print': 'None', 'static_parser': 'True', 'fail_fast': 'False', 'debug': 'False', 'log_cache_events': 'False', 'empty': 'False', 'quiet': 'False', 'indirect_selection': 'eager', 'warn_error': 'None', 'write_json': 'True', 'printer_width': '80'}
+[0m11:49:09.341082 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'fce708e5-fca1-47b0-a537-66ed143852c2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f431df1ef60>]}
+[0m11:49:09.482098 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'fce708e5-fca1-47b0-a537-66ed143852c2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f431a55efc0>]}
+[0m11:49:09.483788 [info ] [MainThread]: Registered adapter: athena=1.10.1
+[0m11:49:09.656776 [debug] [MainThread]: checksum: e9989c45cf636e79891b447a918dff5673543db23a8203a75ea105756074f517, vars: {}, profile: , target: fmcsa_dev, version: 1.11.11
+[0m11:49:09.861438 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m11:49:09.862317 [debug] [MainThread]: Nothing changed, skipping partial parsing.
+[0m11:49:09.863025 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m11:49:09.937332 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'fce708e5-fca1-47b0-a537-66ed143852c2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4319e69550>]}
+[0m11:49:10.101917 [debug] [MainThread]: Wrote artifact WritableManifest to /home/jeremymccormick/dev-sandbox/aws-fmcsa-lakehouse/dbt/target/manifest.json
+[0m11:49:10.104940 [debug] [MainThread]: Wrote artifact SemanticManifest to /home/jeremymccormick/dev-sandbox/aws-fmcsa-lakehouse/dbt/target/semantic_manifest.json
+[0m11:49:10.117658 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'fce708e5-fca1-47b0-a537-66ed143852c2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4319abdf10>]}
+[0m11:49:10.118638 [info ] [MainThread]: Found 4 models, 1 source, 501 macros
+[0m11:49:10.119453 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'fce708e5-fca1-47b0-a537-66ed143852c2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4319ae5a90>]}
+[0m11:49:10.122576 [info ] [MainThread]: 
+[0m11:49:10.123424 [info ] [MainThread]: Concurrency: 4 threads (target='fmcsa_dev')
+[0m11:49:10.124089 [info ] [MainThread]: 
+[0m11:49:10.125116 [debug] [MainThread]: Acquiring new athena connection 'master'
+[0m11:49:10.127144 [debug] [ThreadPool]: Acquiring new athena connection 'list_awsdatacatalog'
+[0m11:49:10.128036 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m11:49:10.658014 [debug] [ThreadPool]: On list_awsdatacatalog: Close
+[0m11:49:10.673395 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_awsdatacatalog, now list_awsdatacatalog_fmcsa)
+[0m11:49:10.674377 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m11:49:11.394395 [debug] [ThreadPool]: On list_awsdatacatalog_fmcsa: Close
+[0m11:49:11.398020 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'fce708e5-fca1-47b0-a537-66ed143852c2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4319ae5430>]}
+[0m11:49:11.404490 [debug] [Thread-1 (]: Began running node model.aws_fmcsa_lakehouse.stg_fmcsa
+[0m11:49:11.405913 [info ] [Thread-1 (]: 1 of 1 START sql table model fmcsa.stg_fmcsa ................................... [RUN]
+[0m11:49:11.407253 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_awsdatacatalog_fmcsa, now model.aws_fmcsa_lakehouse.stg_fmcsa)
+[0m11:49:11.408279 [debug] [Thread-1 (]: Began compiling node model.aws_fmcsa_lakehouse.stg_fmcsa
+[0m11:49:11.432647 [debug] [Thread-1 (]: Writing injected SQL for node "model.aws_fmcsa_lakehouse.stg_fmcsa"
+[0m11:49:11.434582 [debug] [Thread-1 (]: Began executing node model.aws_fmcsa_lakehouse.stg_fmcsa
+[0m11:49:11.564638 [debug] [Thread-1 (]: Skip partitioning: False
+[0m11:49:11.566067 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m11:49:11.875852 [debug] [Thread-1 (]: dbt.adapters.athena.constants adapter: S3 path does not exist
+[0m11:49:11.878238 [debug] [Thread-1 (]: dbt.adapters.athena.constants adapter: Running Athena query:
+-- /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "athena_dbt", "target_name": "fmcsa_dev", "node_id": "model.aws_fmcsa_lakehouse.stg_fmcsa"} */
+create table "awsdatacatalog"."fmcsa"."stg_fmcsa__ha"
+    with (
+      table_type='iceberg',
+      is_external=false,location='s3://spot-lakehouse-dev/silver/iceberg/fmcsa/stg_fmcsa/8ea59af6-6f24-43e6-8545-3811622c164e',
+      partitioning=ARRAY['add_year'],
+      format='parquet'
+    )
+    as
+      
+
+with source as (
+
+    select *
+    from "awsdatacatalog"."fmcsa"."bronze_company_census_raw"
+
+),
+
+cleaned as (
+
+    select
+        cast(dot_number as bigint) as dot_number,
+
+        legal_name,
+        dba_name,
+
+        status_code,
+
+        case
+            when status_code = 'A' then 'Active'
+            when status_code = 'I' then 'Inactive'
+            else 'Other'
+        end as carrier_status,
+
+        phy_city,
+        phy_state,
+        phy_zip,
+
+        carrier_operation,
+
+        cast(business_org_id as integer) as business_org_id,
+
+        case
+            when cast(business_org_id as integer) = 1 then 'Individual'
+            when cast(business_org_id as integer) = 2 then 'Partnership'
+            when cast(business_org_id as integer) = 3 then 'Corporation'
+            else coalesce(business_org_desc, 'Other')
+        end as business_org_type,
+
+        business_org_desc,
+
+        cast(power_units as integer) as power_units,
+        cast(total_drivers as integer) as total_drivers,
+        cast(mcs150_mileage as bigint) as mcs150_mileage,
+        cast(mcs150_mileage_year as integer) as mcs150_mileage_year,
+
+        mcs150_date as mcs150_date_raw,
+
+        cast(date_parse(cast(add_date as varchar), '%Y%m%d') as date) as add_date,
+        cast(substr(cast(add_date as varchar), 1, 4) as integer) as add_year,
+        cast(substr(cast(add_date as varchar), 5, 2) as integer) as add_month,
+
+        load_type,
+        from_iso8601_timestamp(ingested_at_utc) as ingested_at_utc
+
+    from source
+    where add_date is not null
+      and dot_number is not null
+
+)
+
+select *
+from cleaned
+[0m11:49:12.191658 [debug] [Thread-1 (]: dbt.adapters.athena.constants adapter: Athena query ID 143b5a98-0651-48f3-beb0-c5e74561b676
+[0m11:49:21.968532 [debug] [Thread-1 (]: COMPILED CODE RESULT: {"rowcount":4454406,"data_scanned_in_bytes":14915943675}
+[0m11:49:22.399597 [debug] [Thread-1 (]: dbt.adapters.athena.constants adapter: table_name : 328526511298.fmcsa.stg_fmcsa
+[0m11:49:22.400847 [debug] [Thread-1 (]: dbt.adapters.athena.constants adapter: table type : TableType.ICEBERG
+[0m11:49:22.428966 [debug] [Thread-1 (]: Using athena connection "model.aws_fmcsa_lakehouse.stg_fmcsa"
+[0m11:49:22.430009 [debug] [Thread-1 (]: On model.aws_fmcsa_lakehouse.stg_fmcsa: alter table `fmcsa`.`stg_fmcsa` rename to `fmcsa`.`stg_fmcsa__bkp`
+[0m11:49:22.637690 [debug] [Thread-1 (]: dbt.adapters.athena.constants adapter: Athena query ID 51ea665e-16e6-4844-b856-916943eaa1fa
+[0m11:49:23.967352 [debug] [Thread-1 (]: SQL status: OK -1 in 1.536 seconds
+[0m11:49:23.971100 [debug] [Thread-1 (]: Using athena connection "model.aws_fmcsa_lakehouse.stg_fmcsa"
+[0m11:49:23.972135 [debug] [Thread-1 (]: On model.aws_fmcsa_lakehouse.stg_fmcsa: alter table `fmcsa`.`stg_fmcsa__ha` rename to `fmcsa`.`stg_fmcsa`
+[0m11:49:24.091332 [debug] [Thread-1 (]: dbt.adapters.athena.constants adapter: Athena query ID 86e9f749-48dd-49e7-90bb-e548635a3324
+[0m11:49:26.477863 [debug] [Thread-1 (]: SQL status: OK -1 in 2.505 seconds
+[0m11:49:27.101388 [debug] [Thread-1 (]: dbt.adapters.athena.constants adapter: table_name : 328526511298.fmcsa.stg_fmcsa__bkp
+[0m11:49:27.102755 [debug] [Thread-1 (]: dbt.adapters.athena.constants adapter: table type : TableType.ICEBERG
+[0m11:49:27.107544 [debug] [Thread-1 (]: Dropping relation via Glue and S3 APIs
+[0m11:49:27.484853 [debug] [Thread-1 (]: dbt.adapters.athena.constants adapter: table_name : 328526511298.fmcsa.stg_fmcsa__bkp
+[0m11:49:27.486224 [debug] [Thread-1 (]: dbt.adapters.athena.constants adapter: table type : TableType.ICEBERG
+[0m11:49:27.487367 [debug] [Thread-1 (]: dbt.adapters.athena.constants adapter: "awsdatacatalog"."fmcsa"."stg_fmcsa__bkp" is stored in s3://spot-lakehouse-dev/silver/iceberg/fmcsa/stg_fmcsa/49ba3215-f78c-4803-be79-73a28a5fca59
+[0m11:49:28.149019 [debug] [Thread-1 (]: dbt.adapters.athena.constants adapter: Deleting table data: path='s3://spot-lakehouse-dev/silver/iceberg/fmcsa/stg_fmcsa/49ba3215-f78c-4803-be79-73a28a5fca59', bucket='spot-lakehouse-dev', prefix='silver/iceberg/fmcsa/stg_fmcsa/49ba3215-f78c-4803-be79-73a28a5fca59/'
+[0m11:49:31.750083 [debug] [Thread-1 (]: dbt.adapters.athena.constants adapter: Deleted table from glue catalog: "awsdatacatalog"."fmcsa"."stg_fmcsa__bkp"
+[0m11:49:31.753843 [debug] [Thread-1 (]: Writing runtime sql for node "model.aws_fmcsa_lakehouse.stg_fmcsa"
+[0m11:49:31.755646 [debug] [Thread-1 (]: Using athena connection "model.aws_fmcsa_lakehouse.stg_fmcsa"
+[0m11:49:31.756755 [debug] [Thread-1 (]: On model.aws_fmcsa_lakehouse.stg_fmcsa: -- /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "athena_dbt", "target_name": "fmcsa_dev", "node_id": "model.aws_fmcsa_lakehouse.stg_fmcsa"} */
+SELECT '{"rowcount":4454406,"data_scanned_in_bytes":14915943675}';
+[0m11:49:31.869868 [debug] [Thread-1 (]: dbt.adapters.athena.constants adapter: Athena query ID 8b330c17-4fae-4110-b4d7-aba52c7c84d7
+[0m11:49:33.312745 [debug] [Thread-1 (]: SQL status: OK 4454406 in 1.555 seconds
+[0m11:49:33.327927 [debug] [Thread-1 (]: On model.aws_fmcsa_lakehouse.stg_fmcsa: Close
+[0m11:49:33.331179 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'fce708e5-fca1-47b0-a537-66ed143852c2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f431aafda90>]}
+[0m11:49:33.332544 [info ] [Thread-1 (]: 1 of 1 OK created sql table model fmcsa.stg_fmcsa .............................. [[32mOK 4454406[0m in 21.92s]
+[0m11:49:33.333806 [debug] [Thread-1 (]: Finished running node model.aws_fmcsa_lakehouse.stg_fmcsa
+[0m11:49:33.336649 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m11:49:33.337400 [debug] [MainThread]: Connection 'model.aws_fmcsa_lakehouse.stg_fmcsa' was properly closed.
+[0m11:49:33.338118 [info ] [MainThread]: 
+[0m11:49:33.338827 [info ] [MainThread]: Finished running 1 table model in 0 hours 0 minutes and 23.21 seconds (23.21s).
+[0m11:49:33.340475 [debug] [MainThread]: Command end result
+[0m11:49:33.399653 [debug] [MainThread]: Wrote artifact WritableManifest to /home/jeremymccormick/dev-sandbox/aws-fmcsa-lakehouse/dbt/target/manifest.json
+[0m11:49:33.403071 [debug] [MainThread]: Wrote artifact SemanticManifest to /home/jeremymccormick/dev-sandbox/aws-fmcsa-lakehouse/dbt/target/semantic_manifest.json
+[0m11:49:33.414800 [debug] [MainThread]: Wrote artifact RunExecutionResult to /home/jeremymccormick/dev-sandbox/aws-fmcsa-lakehouse/dbt/target/run_results.json
+[0m11:49:33.415673 [info ] [MainThread]: 
+[0m11:49:33.416505 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m11:49:33.417175 [info ] [MainThread]: 
+[0m11:49:33.417853 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=1
+[0m11:49:33.419460 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 25.093126, "process_in_blocks": "8", "process_kernel_time": 0.464586, "process_mem_max_rss": "195532", "process_out_blocks": "2504", "process_user_time": 6.59976}
+[0m11:49:33.420566 [debug] [MainThread]: Command `dbt run` succeeded at 11:49:33.420339 after 25.09 seconds
+[0m11:49:33.421368 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f42fbbc12e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f431ba33c20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f431bf58bf0>]}
+[0m11:49:33.422182 [debug] [MainThread]: Flushing usage events
+[0m11:49:33.550636 [debug] [MainThread]: An error was encountered while trying to flush usage events
