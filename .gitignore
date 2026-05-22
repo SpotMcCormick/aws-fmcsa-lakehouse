@@ -8,6 +8,7 @@ terraform/.terraform.lock.hcl
 
 # Lambda artifacts
 lambda/*.zip
+lambda/package/
 
 # Python
 __pycache__/
