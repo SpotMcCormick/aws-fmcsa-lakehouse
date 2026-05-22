@@ -1,7 +1,10 @@
 # Terraform
-terraform/.terraform/
-terraform/*.tfstate
-terraform/*.tfstate.backup
+.terraform/
+*.tfstate
+*.tfstate.*
+terraform.tfvars
+.terraform.lock.hcl
+terraform/.terraform.lock.hcl
 
 # Lambda artifacts
 lambda/*.zip
@@ -20,3 +23,6 @@ __pycache__/
 
 # OS
 .DS_Store
+
+#initial load data
+data/
