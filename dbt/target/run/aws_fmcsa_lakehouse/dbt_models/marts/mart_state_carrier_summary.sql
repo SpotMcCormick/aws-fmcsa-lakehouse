@@ -1,4 +1,7 @@
-{{ config(materialized='view') }}
+create or replace view
+    "awsdatacatalog"."fmcsa"."mart_state_carrier_summary"
+  as
+    
 
 select
     phy_state,
@@ -9,7 +12,7 @@ select
     sum(total_drivers) as active_total_drivers,
     sum(power_units) as active_power_units
 
-from {{ ref('stg_fmcsa') }}
+from "awsdatacatalog"."fmcsa"."stg_fmcsa"
 
 where carrier_status = 'Active'
   and phy_state is not null

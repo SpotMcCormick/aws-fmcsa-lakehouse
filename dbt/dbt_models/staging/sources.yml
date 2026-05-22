@@ -1,0 +1,7 @@
+version: 2
+
+sources:
+  - name: fmcsa
+    schema: fmcsa
+    tables:
+      - name: bronze_company_census_raw

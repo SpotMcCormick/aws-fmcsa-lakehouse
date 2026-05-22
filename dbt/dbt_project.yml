@@ -1,0 +1,18 @@
+name: aws_fmcsa_lakehouse
+version: '1.0'
+config-version: 2
+
+profile: athena_dbt
+
+model-paths: ["dbt_models"]
+
+models:
+  aws_fmcsa_lakehouse:
+    staging:
+      +materialized: table
+    dim:
+      +materialized: view
+    fct:
+      +materialized: view
+    marts:
+      +materialized: view
